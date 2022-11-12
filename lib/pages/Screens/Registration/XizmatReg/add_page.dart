@@ -1,16 +1,21 @@
 import 'package:farm_helper/utils/const.dart';
 import 'package:flutter/material.dart';
-class Addpage extends StatefulWidget {
-  const Addpage({Key? key}) : super(key: key);
+class Addpage1 extends StatefulWidget {
+  const Addpage1({Key? key}) : super(key: key);
 
   @override
-  State<Addpage> createState() => _AddpageState();
+  State<Addpage1> createState() => _Addpage1State();
 }
 
-class _AddpageState extends State<Addpage> {
+class _Addpage1State extends State<Addpage1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Add"),
+        backgroundColor: Colors.green,
+          automaticallyImplyLeading: false
+      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,

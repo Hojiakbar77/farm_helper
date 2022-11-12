@@ -1,12 +1,15 @@
-import 'package:farm_helper/pages/Plan.dart';
-import 'package:farm_helper/pages/add_page.dart';
-import 'package:farm_helper/pages/chat.dart';
-import 'package:farm_helper/pages/elonlar.dart';
-import 'package:farm_helper/pages/yordam.dart';
+import 'package:farm_helper/pages/Screens/Plan.dart';
+import 'package:farm_helper/pages/Screens/add_page.dart';
+import 'package:farm_helper/pages/Screens/chat.dart';
+import 'package:farm_helper/pages/Screens/elonlar.dart';
+import 'package:farm_helper/pages/Screens/yordam.dart';
+
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/const.dart';
+import '../../utils/const.dart';
+import 'Registration/XizmatReg/Elon.dart';
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -21,7 +24,7 @@ class _HomePageState extends State<HomePage> {
     Planpage(),
     Addpage(),
     ChatPage(),
-    Helppage()
+    HelpPage()
   ];
   void _onItemTapped(int index) {
     setState(() {
@@ -35,18 +38,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
 
 
-
-        title:  Text(_selectedPage==0?"E'lonlar":
-        (_selectedPage==1?"Hisobot":(_selectedPage==2?"Add":
-        (_selectedPage==3?"Chat":"Yordam"))),style: TextStyle(color: colorWhite)),
-        backgroundColor: Colors.green,
-
-
-
-      ),
       body:_widgetOptions.elementAt(_selectedPage),
       bottomNavigationBar:  BottomNavigationBar(
         type: BottomNavigationBarType.fixed,

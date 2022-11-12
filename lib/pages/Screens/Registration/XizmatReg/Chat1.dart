@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
-class ChatPage extends StatefulWidget {
-  const ChatPage({Key? key}) : super(key: key);
+class ChatPage1 extends StatefulWidget {
+  const ChatPage1({Key? key}) : super(key: key);
 
   @override
-  State<ChatPage> createState() => _ChatPageState();
+  State<ChatPage1> createState() => _ChatPage1State();
 }
 
-class _ChatPageState extends State<ChatPage> {
+class _ChatPage1State extends State<ChatPage1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Chat"),
+        backgroundColor: Colors.green,
+          automaticallyImplyLeading: false
+      ),
       body: Column(
         children: [
           Container(
@@ -58,12 +63,12 @@ class _ChatPageState extends State<ChatPage> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(right: 250,bottom: 5),
-                      child: Text("     Xurshid ",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500) ,),
+                      child: Text("   Xurshid ",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500) ,),
                     ),
 
                     Padding(
                       padding: const EdgeInsets.only(left: 2.0),
-                      child: Text("Salom biz sizga o'z xizmatimzni taklif etamiz"),
+                      child: Text(" Mahsulot sotib olmoqchi edim                             "),
                     )
                   ],
                 )
@@ -94,7 +99,7 @@ class _ChatPageState extends State<ChatPage> {
 
                     Padding(
                       padding: const EdgeInsets.only(left: 5.0),
-                      child: Text("    Kechagi dalaga qo'yilgan pilalar yaxshi natija berdi"),
+                      child: Text("    Kecha mahsulot bo'yicha murojat qilayotgandim"),
                     )
                   ],
                 )
@@ -120,13 +125,10 @@ class _ChatPageState extends State<ChatPage> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(right: 250,bottom: 5),
-                      child: Text("    Xilola ",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500) ,),
+                      child: Text("  Xilola  ",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500) ,),
                     ),
 
-                    Padding(
-                      padding: const EdgeInsets.only(left: 8.0),
-                      child: Text(" Labaratoriya tekshiriuvlari yaxshi natija berdi"),
-                    )
+                    Text("  Sizning mahsulot bizga yoqdi                             ")
                   ],
                 )
 

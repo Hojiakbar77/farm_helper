@@ -13,3 +13,4 @@ const Color colorDeppgreen = Color (0xff00A795);
 const Color colorDark1= Color (0xff2A2A2D);
 const Color colorOrange = Color(0xffFDAB2A);
 const Color colorRed = Color(0xffFF426D);
+const Color colorYelow = Color(0xffFFF9C4);
